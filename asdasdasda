@@ -1,0 +1,296 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local GUI = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+GUI.Name = "GUI"
+GUI.Parent = game.CoreGui
+GUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = GUI
+Frame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Frame.Position = UDim2.new(0.1484375, 0, 0.069129914, 0)
+Frame.Size = UDim2.new(0, 294, 0, 185)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(41, 41, 41)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.1439417, 0)
+Frame_2.Size = UDim2.new(0, 294, 0, 151)
+
+Frame_3.Parent = Frame_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Frame_3.Position = UDim2.new(0.0272108838, 0, 0.0578029193, 0)
+Frame_3.Size = UDim2.new(0, 277, 0, 132)
+
+TextButton.Parent = Frame_3
+TextButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextButton.Position = UDim2.new(0.0265151374, 0, 0.075757578, 0)
+TextButton.Size = UDim2.new(0, 115, 0, 32)
+TextButton.Font = Enum.Font.GothamBold
+TextButton.Text = "SafeESP"
+TextButton.TextColor3 = Color3.fromRGB(86, 0, 232)
+TextButton.TextSize = 14.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(35, 3, 106)
+TextButton.TextStrokeTransparency = 0.000
+
+UICorner.CornerRadius = UDim.new(0.25, 0)
+UICorner.Parent = TextButton
+
+TextButton_2.Parent = Frame_3
+TextButton_2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextButton_2.Position = UDim2.new(0.0265151374, 0, 0.376428217, 0)
+TextButton_2.Size = UDim2.new(0, 115, 0, 32)
+TextButton_2.Font = Enum.Font.GothamBold
+TextButton_2.Text = "TrashESP"
+TextButton_2.TextColor3 = Color3.fromRGB(86, 0, 232)
+TextButton_2.TextSize = 14.000
+TextButton_2.TextStrokeColor3 = Color3.fromRGB(35, 3, 106)
+TextButton_2.TextStrokeTransparency = 0.000
+
+UICorner_2.CornerRadius = UDim.new(0.25, 0)
+UICorner_2.Parent = TextButton_2
+
+TextButton_3.Parent = Frame_3
+TextButton_3.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextButton_3.Position = UDim2.new(0.0265151374, 0, 0.677098811, 0)
+TextButton_3.Size = UDim2.new(0, 115, 0, 32)
+TextButton_3.Font = Enum.Font.GothamBold
+TextButton_3.Text = "DealerESP"
+TextButton_3.TextColor3 = Color3.fromRGB(86, 0, 232)
+TextButton_3.TextSize = 14.000
+TextButton_3.TextStrokeColor3 = Color3.fromRGB(35, 3, 106)
+TextButton_3.TextStrokeTransparency = 0.000
+
+UICorner_3.CornerRadius = UDim.new(0.25, 0)
+UICorner_3.Parent = TextButton_3
+
+TextButton_4.Parent = Frame_3
+TextButton_4.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextButton_4.Position = UDim2.new(0.511363626, 0, 0.0733978972, 0)
+TextButton_4.Size = UDim2.new(0, 115, 0, 111)
+TextButton_4.Font = Enum.Font.GothamBold
+TextButton_4.Text = "anal"
+TextButton_4.TextColor3 = Color3.fromRGB(86, 0, 232)
+TextButton_4.TextSize = 14.000
+TextButton_4.TextStrokeColor3 = Color3.fromRGB(35, 3, 106)
+TextButton_4.TextStrokeTransparency = 0.000
+
+UICorner_4.CornerRadius = UDim.new(0.25, 0)
+UICorner_4.Parent = TextButton_4
+
+UICorner_5.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_5.Parent = Frame_3
+
+UICorner_6.CornerRadius = UDim.new(0, 6)
+UICorner_6.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.351743221, 0, 0.0194015019, 0)
+TextLabel.Size = UDim2.new(0, 86, 0, 23)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Crim X"
+TextLabel.TextColor3 = Color3.fromRGB(86, 0, 232)
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(35, 3, 106)
+
+-- Scripts:
+
+local function GOANZ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for i, v in pairs(game:GetService("Workspace").Map.BredMakurz:GetDescendants()) do
+			if v:IsA("DoubleConstrainedValue") and v.Name == "Health" and v.Parent.Name == "Values" then
+				if v.Value == 40 then
+					local BillboardGui = Instance.new("BillboardGui", v.Parent.Parent.MainPart)
+					local TextLabel = Instance.new('TextLabel') 
+	
+	
+	
+					BillboardGui.StudsOffsetWorldSpace = Vector3.new(0,2.5,0)
+					BillboardGui.AlwaysOnTop = true 
+					BillboardGui.Size = UDim2.new(0, 300, 0, 300)
+					BillboardGui.StudsOffset = Vector3.new(0,2,0)
+					BillboardGui.ResetOnSpawn = false
+	
+	
+					TextLabel.Parent = BillboardGui
+					TextLabel.BackgroundColor3 = Color3.new(1,1,1)
+					TextLabel.BackgroundTransparency = 1 
+					TextLabel.Size = UDim2.new(1, 0, 1, 0) 
+					TextLabel.Font = 19
+					TextLabel.TextSize = 14
+					TextLabel.Text = "SAFE"
+					TextLabel.TextColor3 = Color3.fromRGB(86, 0, 232)
+					TextLabel.TextStrokeTransparency = 0
+					TextLabel.TextStrokeColor3 = Color3.fromRGB(35, 3, 106)
+					TextLabel.TextScaled = false
+					BillboardGui.Name = "GROUPESP"
+				end
+			end
+		end
+	
+		for i, v in pairs(game:GetService("Workspace").Map.BredMakurz:GetDescendants()) do
+			if v:IsA("DoubleConstrainedValue") and v.Name == "Health" and v.Parent.Name == "Values" then
+				game:GetService("RunService").RenderStepped:Connect(function()
+					if v.Parent.Parent.MainPart.GROUPESP == nil then
+						if v.Value == 40 then
+							local BillboardGui = Instance.new("BillboardGui", v.Parent.Parent.MainPart)
+							local TextLabel = Instance.new('TextLabel') 
+	
+	
+	
+							BillboardGui.StudsOffsetWorldSpace = Vector3.new(0,2.5,0)
+							BillboardGui.AlwaysOnTop = true 
+							BillboardGui.Size = UDim2.new(0, 300, 0, 300)
+							BillboardGui.StudsOffset = Vector3.new(0,2,0)
+							BillboardGui.ResetOnSpawn = false
+	
+	
+							TextLabel.Parent = BillboardGui
+							TextLabel.BackgroundColor3 = Color3.new(1,1,1)
+							TextLabel.BackgroundTransparency = 1 
+							TextLabel.Size = UDim2.new(1, 0, 1, 0) 
+							TextLabel.Font = 19
+							TextLabel.TextSize = 14
+							TextLabel.Text = "SAFE"
+							TextLabel.TextColor3 = Color3.fromRGB(86, 0, 232)
+							TextLabel.TextStrokeTransparency = 0
+							TextLabel.TextStrokeColor3 = Color3.fromRGB(35, 3, 106)
+							TextLabel.TextScaled = false
+							BillboardGui.Name = "GROUPESP"
+							if v.Value == 0 then
+								v.Parent.Parent.MainPart.GROUPESP:Destroy()
+							end
+						end
+					end
+				end)
+			end
+		end
+	
+		for i, v in pairs(game:GetService("Workspace").Map.BredMakurz:GetDescendants()) do
+			if v:IsA("DoubleConstrainedValue") and v.Name == "Health" and v.Parent.Name == "Values" then
+				game:GetService("RunService").RenderStepped:Connect(function()
+					if v.Value == 0 then
+						v.Parent.Parent.MainPart.GROUPESP:Destroy()
+					end
+				end)
+			end
+		end
+	
+	
+	end)
+end
+coroutine.wrap(GOANZ_fake_script)()
+local function MLVP_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for i, v in pairs(game:GetService("Workspace").Filter.SpawnedPiles:GetDescendants()) do
+			if v:IsA("MeshPart") and v.Parent.Name == "S2" or v.Parent.Name == "S1" then
+				local BillboardGui = Instance.new("BillboardGui", v)
+				local TextLabel = Instance.new('TextLabel') 
+	
+	
+	
+				BillboardGui.StudsOffsetWorldSpace = Vector3.new(0,2.5,0)
+				BillboardGui.AlwaysOnTop = true 
+				BillboardGui.Size = UDim2.new(0, 300, 0, 300)
+				BillboardGui.StudsOffset = Vector3.new(0,2,0)
+				BillboardGui.ResetOnSpawn = false
+	
+	
+				TextLabel.Parent = BillboardGui
+				TextLabel.BackgroundColor3 = Color3.new(1,1,1)
+				TextLabel.BackgroundTransparency = 1 
+				TextLabel.Size = UDim2.new(1, 0, 1, 0) 
+				TextLabel.Font = 19
+				TextLabel.TextSize = 14
+				TextLabel.Text = "Trash"
+				TextLabel.TextColor3 = Color3.fromRGB(86, 0, 232)
+				TextLabel.TextStrokeTransparency = 0
+				TextLabel.TextStrokeColor3 = Color3.fromRGB(35, 3, 106)
+				TextLabel.TextScaled = false
+				BillboardGui.Name = "GROUPESP"
+			end
+		end
+	end)
+end
+coroutine.wrap(MLVP_fake_script)()
+local function EWGVJ_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for i, v in pairs(game:GetService("Workspace").Map.Shopz:GetDescendants()) do
+			if v:IsA("Part") and v.Name == "Head" and v.Parent.Name == "DealerMan" then
+	
+				local BillboardGui = Instance.new("BillboardGui", v)
+				local TextLabel = Instance.new('TextLabel') 
+	
+	
+	
+				BillboardGui.StudsOffsetWorldSpace = Vector3.new(0,2.5,0)
+				BillboardGui.AlwaysOnTop = true 
+				BillboardGui.Size = UDim2.new(0, 300, 0, 300)
+				BillboardGui.StudsOffset = Vector3.new(0,2,0)
+				BillboardGui.ResetOnSpawn = false
+	
+	
+				TextLabel.Parent = BillboardGui
+				TextLabel.BackgroundColor3 = Color3.new(1,1,1)
+				TextLabel.BackgroundTransparency = 1 
+				TextLabel.Size = UDim2.new(1, 0, 1, 0) 
+				TextLabel.Font = 19
+				TextLabel.TextSize = 14
+				TextLabel.Text = "Dealer"
+				TextLabel.TextColor3 = Color3.fromRGB(86, 0, 232)
+				TextLabel.TextStrokeTransparency = 0
+				TextLabel.TextStrokeColor3 = Color3.fromRGB(35, 3, 106)
+				TextLabel.TextScaled = false
+				BillboardGui.Name = "GROUPESP"
+			end
+		end
+	
+	
+	
+	
+	end)
+end
+coroutine.wrap(EWGVJ_fake_script)()
+local function FPJZQJL_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Selectable = true
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+	local GUI = script.Parent.Parent
+	game:GetService("UserInputService").InputBegan:Connect(function(Key,Processed)
+		if Processed then return end
+		if Key.KeyCode == Enum.KeyCode.L then
+			GUI.Enabled = not GUI.Enabled		
+		end
+	end)
+	
+end
+coroutine.wrap(FPJZQJL_fake_script)()
